@@ -34,26 +34,46 @@ nav {
   margin: 0 0 20px 20px;
 }
 
+.cards--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: space-around;
+}
+
 .card {
   width: 200px;
   font-size: 12px;
-  margin-left: 40px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card--text__color {
   color: grey;
 }
 
-.card--text {
+.card--stats {
   display: flex;
   align-items: center;
 }
 
 .card--img {
   width: 100%;
-  border: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .card--star {
   height: 15px;
+}
+
+.card--price {
+  margin-top: 10px;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
